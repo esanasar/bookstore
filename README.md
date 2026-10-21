@@ -1,16 +1,73 @@
-# React + Vite
+# BookNook Storefront
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React + TypeScript bookstore landing page and shopping cart built with Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Hero section with bookstore branding
+- Suggested books section
+- Full book catalog
+- Add-to-cart functionality
+- Quantity controls in the cart
+- Remove and clear cart actions
+- Checkout flow
+- Responsive layout for desktop and mobile
+- Clean component-based structure for learning React best practices
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Vite
+- CSS modules-free custom styling
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/App.tsx` — main app logic and cart state
+- `src/components/` — reusable UI components
+- `src/data/books.ts` — sample book data
+- `src/types/book.ts` — TypeScript type definition for books
+- `src/App.css` — styling for the bookstore UI
+- `src/index.css` — global styles
+
+## Run the app locally
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open the local URL shown in the terminal.
+
+## Build for production
+
+```bash
+npm run build
+```
+
+## Notes for beginners
+
+This project is designed to help you learn React with a clean structure:
+
+- components are separated by responsibility
+- data is kept in a dedicated file
+- TypeScript makes the book object shape clear
+- app state is managed in the main component
+
+## Example books included
+
+- Atomic Habits
+- The Midnight Library
+- Deep Work
+- Ikigai
+- Clean Code
+- The Psychology of Money
+
+## License
+
+This project is for learning purposes.
